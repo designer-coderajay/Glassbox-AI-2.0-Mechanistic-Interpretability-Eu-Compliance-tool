@@ -8,6 +8,30 @@
 
 ---
 
+## ⚠️ DESIGN LOCK — docs/index.html is FROZEN
+
+**The Vercel website design (`docs/index.html`) is approved and locked. Do NOT redesign it.**
+
+The canonical snapshot lives at `docs/_design-snapshot/index.html`.
+
+**During any audit, version bump, or feature change, you may ONLY update these inside `docs/index.html`:**
+- Research numbers (r, sufficiency, comprehensiveness, F1) if the paper updates
+- Version badge / pip install string
+- Canonical/og URL if the Vercel project URL changes
+- HuggingFace Space API endpoint URL
+- Text copy inside existing sections
+
+**You must NEVER change:**
+- Color palette (`--amber`, `--bg`, `--fg`, `--muted` CSS variables)
+- Font families (DM Serif Display, Inter, JetBrains Mono)
+- Section order or which sections exist
+- Animation keyframes or timing curves (`cubic-bezier(0.16,1,0.3,1)`)
+- Overall layout (split hero, terminal, stats ticker, circuit analyzer, compliance panel)
+
+If the file is accidentally overwritten: `cp docs/_design-snapshot/index.html docs/index.html`
+
+---
+
 ## What Glassbox Does
 
 Causal circuit discovery for transformer models. Given a prompt, it:

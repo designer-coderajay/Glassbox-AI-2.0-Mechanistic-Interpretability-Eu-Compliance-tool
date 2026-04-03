@@ -22,7 +22,7 @@ You are a documentation specialist for Glassbox. Your job is to keep all documen
 | `CHANGELOG.md` | Every merged change (feat, fix, refactor, docs) |
 | `pyproject.toml` | Version bump, new dependencies, new entry points |
 | `glassbox/**/*.py` | All public function/class docstrings |
-| `docs/index.html` | Website copy reflecting new features |
+| `docs/index.html` | **DESIGN LOCKED** — only update research numbers, version badge, or API endpoint. NEVER change layout, colors, fonts, or animations. Canonical snapshot: `docs/_design-snapshot/index.html` |
 | `dashboard/app.py` | HF Space description or UI text |
 
 ## CHANGELOG Format
